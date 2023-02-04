@@ -9,8 +9,8 @@
    ```sh 
    # Pull tomcat latest image from dockerhub 
    From tomcat
-   # Maintainer
-   MAINTAINER "Peter Nkolo" linuxstrainings@gmail.com 
+  
+   LABEL "linux Spring Board" linuxSpringBoard@gmail.com 
 
    # copy war file on to container 
    COPY ./webapp.war /usr/local/tomcat/webapps

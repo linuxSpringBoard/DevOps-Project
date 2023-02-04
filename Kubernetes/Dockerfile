@@ -1,6 +1,5 @@
 FROM tomcat:latest
 
-MAINTAINER AR Shankar
+LABEL linux Spring Board linuxSpringBoard@gmail.com
 
 COPY ./webapp.war /usr/local/tomcat/webapps
-

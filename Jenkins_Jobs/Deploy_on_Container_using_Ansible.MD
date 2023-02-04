@@ -2,19 +2,21 @@
 # *Jenkins Job name:* `Deploy_on_Container_using_ansible`
 
 ### Pre-requisites
-
 1. Jenkins server 
-1. Docker-host server 
-1. Ansible server
+2. Docker-host server 
+3. Ansible server
+
 1. `Dockerfile` under *`/opt/docker`* on Ansible server **[Get Help Here]()**
    ```sh 
    # Pull tomcat latest image from dockerhub 
-   From tomcat
-   # Maintainer
-   MAINTAINER "AR Shankar" 
+   FROM tomcat
+   
+   LABEL "linux Spring Board <linuxSpringBoard@gmail.com>" 
 
    # copy war file on to container 
    COPY ./webapp.war /usr/local/tomcat/webapps
+
+
 1. Create `create-docker-image.yml` unser *`/opt/docker`* on Ansible server **[Get Help Here]()**
    ```sh
    ---
